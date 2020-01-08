@@ -1,11 +1,17 @@
 .header-image {
   height: 500px;
-  padding: 60px 60px 0 60px;
+  padding-top: 60px;
   margin-bottom: 80px;
 
   @media @tablet {
+    height: 550px;
+    margin-bottom: 50px;
+  }
+
+  @media @mobile {
     height: 600px;
     margin-bottom: 50px;
+    padding-top: 40px;
   }
 
   background-image: url("https://ucarecdn.com/2d020f8a-973c-4de3-8080-a0045e0046ee/sanfrancisco4674351.jpg");
@@ -21,9 +27,8 @@
 header {
   max-width: 80%;
   margin: 0 auto;
-
-  @media @tablet {
-    max-width: 100%;
+  @media @mobile {
+    max-width: 92%;
   }
 
   h1 {
@@ -59,7 +64,7 @@ header {
   }
 
   .button-center {
-    @media @tablet {
+    @media @laptop {
       text-align: center;
     }
   }

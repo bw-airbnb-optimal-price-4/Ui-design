@@ -208,7 +208,7 @@ img {
 }
 .header-image {
   height: 500px;
-  padding: 60px 60px 0 60px;
+  padding-top: 60px;
   margin-bottom: 80px;
   background-image: url("https://ucarecdn.com/2d020f8a-973c-4de3-8080-a0045e0046ee/sanfrancisco4674351.jpg");
   background-size: cover;
@@ -217,8 +217,15 @@ img {
 }
 @media (max-width: 800px) {
   .header-image {
+    height: 550px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .header-image {
     height: 600px;
     margin-bottom: 50px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 1500px) {
@@ -230,9 +237,9 @@ header {
   max-width: 80%;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   header {
-    max-width: 100%;
+    max-width: 92%;
   }
 }
 header h1 {
@@ -286,7 +293,7 @@ header button:active {
   position: relative;
   top: 1px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
   header .button-center {
     text-align: center;
   }
