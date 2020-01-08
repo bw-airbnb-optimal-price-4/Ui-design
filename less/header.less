@@ -1,0 +1,98 @@
+.header-image {
+  height: 500px;
+  padding: 60px 60px 0 60px;
+  margin-bottom: 80px;
+
+  @media @tablet {
+    height: 600px;
+    margin-bottom: 50px;
+  }
+
+  background-image: url("https://ucarecdn.com/2d020f8a-973c-4de3-8080-a0045e0046ee/sanfrancisco4674351.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -140px;
+
+  @media( max-width: 1500px ) {
+    background-position-y: -40px;
+  }
+}
+
+header {
+  max-width: 80%;
+  margin: 0 auto;
+
+  @media @tablet {
+    max-width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+
+    font-size: 4.4rem;
+    font-weight: bold;
+    @media @tablet {
+      font-size: 3.8rem;
+    }
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    @media @tablet {
+      font-size: 2.6rem;
+    }
+  }
+
+  .hero-box {
+    @media @laptop {
+      background-color: rgba(255, 255, 255, .2);
+      backdrop-filter: blur(12px);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  button {
+    margin-top: 25px;
+    .button();
+  }
+
+  .button-center {
+    @media @tablet {
+      text-align: center;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 70px;
+
+  .product-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: @color-primary-0;
+  }
+
+  .links {
+    margin-bottom: 5px;
+  }
+
+  a {
+    font-size: 1.8rem;
+    color: grey;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:first-child {
+      margin-right: 24px;
+    }
+  }
+
+}

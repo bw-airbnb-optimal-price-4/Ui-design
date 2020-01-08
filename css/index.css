@@ -1,3 +1,30 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+.button {
+  box-shadow: 0px 10px 14px -7px #9ED7AB;
+  background: linear-gradient(to bottom, #429E56 5%, #6CBC7D 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+.button:hover {
+  background: linear-gradient(to bottom, #26843B 5%, #6CBC7D 100%);
+  background-color: #408c99;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,6 +169,7 @@ h3,
 h4,
 h5 {
   font-family: 'Noto Sans', sans-serif;
+  line-height: 1.3;
 }
 h1 {
   font-size: 4rem;
@@ -162,4 +190,156 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    border: 5px solid red;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    border: 5px solid blue;
+  }
+}
+.header-image {
+  height: 500px;
+  padding: 60px 60px 0 60px;
+  margin-bottom: 80px;
+  background-image: url("https://ucarecdn.com/2d020f8a-973c-4de3-8080-a0045e0046ee/sanfrancisco4674351.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -140px;
+}
+@media (max-width: 800px) {
+  .header-image {
+    height: 600px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1500px) {
+  .header-image {
+    background-position-y: -40px;
+  }
+}
+header {
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  header {
+    max-width: 100%;
+  }
+}
+header h1 {
+  margin-bottom: 15px;
+  font-size: 4.4rem;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 3.8rem;
+  }
+}
+header h2 {
+  font-size: 2.8rem;
+}
+@media (max-width: 800px) {
+  header h2 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 1300px) {
+  header .hero-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+header button {
+  margin-top: 25px;
+  box-shadow: 0px 10px 14px -7px #9ED7AB;
+  background: linear-gradient(to bottom, #429E56 5%, #6CBC7D 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+header button:hover {
+  background: linear-gradient(to bottom, #26843B 5%, #6CBC7D 100%);
+  background-color: #408c99;
+}
+header button:active {
+  position: relative;
+  top: 1px;
+}
+@media (max-width: 800px) {
+  header .button-center {
+    text-align: center;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 70px;
+}
+nav .product-name {
+  font-family: 'Nunito', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #429E56;
+}
+nav .links {
+  margin-bottom: 5px;
+}
+nav a {
+  font-size: 1.8rem;
+  color: grey;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a:first-child {
+  margin-right: 24px;
+}
+.body-copy {
+  max-width: 55%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .body-copy {
+    max-width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .body-copy {
+    max-width: 92%;
+  }
+}
+.body-copy section {
+  margin-bottom: 40px;
+}
+.body-copy section h3 {
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: #26843B;
+}
+.body-copy section p {
+  font-size: 2.1rem;
 }

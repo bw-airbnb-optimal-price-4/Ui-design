@@ -1,2 +1,30 @@
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  background-color: @color-primary-1;
+
+  .product-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .links {
+    margin-bottom: 5px;
+  }
+
+  a {
+    font-size: 1.8rem;
+    color: grey;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:first-child {
+      margin-right: 24px;
+    }
+  }
+
 }
