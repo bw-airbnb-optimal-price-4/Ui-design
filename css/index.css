@@ -195,17 +195,6 @@ img {
   max-width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
-  .container {
-    max-width: 100%;
-    border: 5px solid red;
-  }
-}
-@media (max-width: 500px) {
-  .container {
-    border: 5px solid blue;
-  }
-}
 .header-image {
   height: 500px;
   padding-top: 60px;
@@ -315,18 +304,24 @@ nav .product-name {
     font-size: 3rem;
   }
 }
+nav .product-name a {
+  text-decoration: none;
+}
+nav .product-name a:visited {
+  color: #429E56;
+}
 nav .links {
   margin-bottom: 5px;
 }
-nav a {
+nav .links a {
   font-size: 1.8rem;
   color: grey;
   text-decoration: none;
 }
-nav a:hover {
+nav .links a:hover {
   text-decoration: underline;
 }
-nav a:first-child {
+nav .links a:first-child {
   margin-right: 24px;
 }
 footer {

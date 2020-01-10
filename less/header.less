@@ -86,21 +86,28 @@ nav {
     @media @mobile {
       font-size: 3rem;
     }
+
+    a {
+      text-decoration: none;
+      &:visited {
+        color: @color-primary-0;
+      }
+    }
   }
 
   .links {
     margin-bottom: 5px;
-  }
 
-  a {
-    font-size: 1.8rem;
-    color: grey;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-    &:first-child {
-      margin-right: 24px;
+    a {
+      font-size: 1.8rem;
+      color: grey;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:first-child {
+        margin-right: 24px;
+      }
     }
   }
 
