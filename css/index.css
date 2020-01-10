@@ -237,7 +237,7 @@ header {
   max-width: 80%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   header {
     max-width: 92%;
   }
@@ -310,6 +310,11 @@ nav .product-name {
   font-weight: bold;
   color: #429E56;
 }
+@media (max-width: 500px) {
+  nav .product-name {
+    font-size: 3rem;
+  }
+}
 nav .links {
   margin-bottom: 5px;
 }
@@ -324,9 +329,16 @@ nav a:hover {
 nav a:first-child {
   margin-right: 24px;
 }
+footer {
+  margin: 80px 0 50px 0;
+  text-align: center;
+}
+footer small {
+  font-size: 1.6rem;
+}
 .body-copy {
-  max-width: 55%;
   margin: 0 auto;
+  max-width: 55%;
 }
 @media (max-width: 800px) {
   .body-copy {
@@ -349,4 +361,54 @@ nav a:first-child {
 }
 .body-copy section p {
   font-size: 2.1rem;
+}
+.about .body-copy {
+  max-width: 65%;
+  min-width: 730px;
+}
+@media (max-width: 800px) {
+  .about .body-copy {
+    max-width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .about .body-copy {
+    max-width: 92%;
+  }
+}
+@media (max-width: 800px) {
+  .about .body-copy {
+    min-width: 0px;
+  }
+}
+.about section {
+  margin-bottom: 60px;
+}
+.about section .bio-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about section .bio-content img {
+  align-self: center;
+  width: 220px;
+  margin-right: 30px;
+}
+@media (max-width: 800px) {
+  .about section .bio-content img {
+    width: 280px;
+  }
+}
+.about section .bio-content p {
+  margin-top: 20px;
+  flex-basis: 65%;
+}
+@media (max-width: 800px) {
+  .about section .bio-content p {
+    flex-basis: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .about section .bio-content p {
+    flex-basis: 100%;
+  }
 }

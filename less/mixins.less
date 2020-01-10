@@ -22,3 +22,13 @@
 		top:1px;
 	}
 }
+
+.media-max-widths(@default-width; @tablet-width; @mobile-width) {
+  max-width: @default-width;
+  @media @tablet {
+    max-width: @tablet-width;
+  }
+  @media @mobile {
+    max-width: @mobile-width;
+  }
+}

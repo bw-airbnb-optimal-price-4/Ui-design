@@ -1,0 +1,37 @@
+.about {
+  .body-copy {
+    .media-max-widths(65%; 80%; 92%);
+    min-width: 730px;
+    @media @tablet {
+      min-width: 0px;
+    }
+  }
+
+  section {
+    margin-bottom: 60px;
+
+    .bio-content {
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        align-self: center;
+        width: 220px;
+        margin-right: 30px;
+        @media @tablet {
+          width: 280px;
+        }
+      }
+      p {
+        margin-top: 20px;
+        flex-basis: 65%;
+        @media @tablet {
+          flex-basis: 80%;
+        }
+        @media @mobile {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
