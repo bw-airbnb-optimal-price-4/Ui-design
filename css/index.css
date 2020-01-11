@@ -306,6 +306,7 @@ nav .product-name {
 }
 nav .product-name a {
   text-decoration: none;
+  color: #429E56;
 }
 nav .product-name a:visited {
   color: #429E56;
